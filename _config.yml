@@ -15,7 +15,7 @@ remote_theme           : "cjue25/cjue25.github.io@master"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "zh-TW"
+locale                   : "en-US"
 title                    : "Cjue Planet"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
