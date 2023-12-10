@@ -1,5 +1,4 @@
 ---
-layout: posts
 title:  "Start from the Earth!"
 ---
 
