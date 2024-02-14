@@ -1,7 +1,8 @@
 ---
 title:  "Start from the Earth!"
-categories:
-  - Test
+sidebar:
+  title: "Sample Title"
+  nav: sidebar-sample
 ---
 
 Bi----Bi--Biiii

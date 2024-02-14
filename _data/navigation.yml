@@ -11,6 +11,8 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 
-  site_sidebar:
-  - title: "Categories"
-    type: categories
+sidebar-sample:
+  - title: "Parent Page A"
+    children:
+      - title: "Child Page A1"
+        url: /
