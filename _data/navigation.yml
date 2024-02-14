@@ -11,8 +11,8 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 
-sidebar-sample:
-  - title: "Parent Page A"
+sidebar_nav:
+  - title: "Categories"
     children:
-      - title: "Child Page A1"
-        url: /
+      - title: "Test"
+        url: /posts/

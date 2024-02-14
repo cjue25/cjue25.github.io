@@ -1,8 +1,6 @@
 ---
 title:  "Start from the Earth!"
-sidebar:
-  title: "Sample Title"
-  nav: sidebar-sample
+permalink: /posts/
 ---
 
 Bi----Bi--Biiii

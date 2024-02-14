@@ -230,6 +230,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  # - jekyll-archives
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -287,5 +288,6 @@ defaults:
       author_profile: true
       comments: true
       related: true
-
-  
+      sidebar:
+        nav: sidebar_nav
+     
