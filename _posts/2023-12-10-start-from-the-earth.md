@@ -1,5 +1,7 @@
 ---
 title:  "Start from the Earth!"
+categories:
+  - Test
 ---
 
 Bi----Bi--Biiii
