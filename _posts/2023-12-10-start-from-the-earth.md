@@ -1,6 +1,7 @@
 ---
 title:  "Start from the Earth!"
-permalink: /posts/
+categories:
+  - test2
 ---
 
 Bi----Bi--Biiii

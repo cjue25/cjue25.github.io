@@ -10,9 +10,19 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+    - title: "Categories"
+      url: /categories/
+    - title: "Posts"
+      url: /posts/
 
-sidebar_nav:
+
+
+# sidebar_nav:
+#   - title: "Categories"
+#     children:
+#       - title: "Test"
+#         url: /posts/
+
+site_sidebar:
   - title: "Categories"
-    children:
-      - title: "Test"
-        url: /posts/
+    type: categories

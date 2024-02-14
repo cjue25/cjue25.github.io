@@ -222,6 +222,7 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+permalink: /posts/:slug
 
 # Plugins (previously gems:)
 plugins:
@@ -288,6 +289,8 @@ defaults:
       author_profile: true
       comments: true
       related: true
+      classes: wide
+      # sidebar:
+      #   nav: sidebar_nav
       sidebar:
-        nav: sidebar_nav
-     
+        nav: "site_sidebar"
