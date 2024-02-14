@@ -294,3 +294,5 @@ defaults:
       #   nav: sidebar_nav
       sidebar:
         nav: "site_sidebar"
+
+#bundle exec jekyll serve
