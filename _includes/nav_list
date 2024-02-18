@@ -13,6 +13,8 @@
           <span class="nav__sub-title">{{ nav.title }}</span>
         {% endif %}
 
+        {% if nav.type == "categories" %}{% include_cached category-sidebar.html %}{% endif %}
+        
         {% if nav.children != null %}
         <ul>
           {% for child in nav.children %}

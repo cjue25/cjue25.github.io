@@ -5,5 +5,5 @@ layout: posts
 author_profile: true
 classes: wide
 sidebar:
-  nav: pages 
+  nav: "site_sidebar"
 ---
