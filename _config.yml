@@ -298,7 +298,6 @@ defaults:
       show_date: true
       comments: true
       related: true
-      classes: wide
       # sidebar:
       #   nav: sidebar_nav
       sidebar:
