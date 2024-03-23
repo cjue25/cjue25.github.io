@@ -6,12 +6,12 @@
    Typography
    ========================================================================== */
 
-$doc-font-size: 12 !default;
+$doc-font-size: 16 !default;
 
 /* paragraph indention */
-$paragraph-indent: false !default; // true, false (default)
+// $paragraph-indent: false !default; // true, false (default)
+$paragraph-indent: false;
 $indent-var: 1.3em !default;
-$margin-top: 2;
    
 /* system typefaces */
 $serif: Georgia, Times, serif !default;
