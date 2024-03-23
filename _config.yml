@@ -105,8 +105,8 @@ analytics:
 # Site Author
 author:
   name             : "Cjue"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Hello"
+  avatar           : "/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Good things take time"
   location         : "Universe"
   email            :
   links:
