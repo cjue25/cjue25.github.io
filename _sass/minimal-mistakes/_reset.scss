@@ -3,20 +3,12 @@
    ========================================================================== */
 
 * { box-sizing: border-box; }
+
 html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
   background-color: $background-color;
   font-size: 16px;
-
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-// html {
-//   /* apply a natural box layout model to all elements */
-//   box-sizing: border-box;
-//   background-color: $background-color;
-//   font-size: 16px;
 
 //   @include breakpoint($medium) {
 //     font-size: 18px;
@@ -30,9 +22,9 @@ html {
 //     font-size: 22px;
 //   }
 
-//   -webkit-text-size-adjust: 100%;
-//   -ms-text-size-adjust: 100%;
-// }
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
 /* Remove margin */
 
