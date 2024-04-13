@@ -40,6 +40,13 @@
        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
        processEscapes: true
      },
+     TeX: {
+        Macros: {
+          diff: ["\\frac{d #1}{d #2}", 2],
+          pdv: ["\\frac{\\partial #1}{\\partial #2}", 2],
+          vv: ["\\vec{#1}", 1],
+        }
+      },
      "HTML-CSS": { availableFonts: ["TeX"] }
    });
 </script>
