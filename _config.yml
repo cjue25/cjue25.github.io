@@ -298,6 +298,9 @@ defaults:
       show_date: true
       comments: true
       related: true
+      # toc: true
+      # toc_label: "Contents"
+      # toc_sticky: true
       # sidebar:
       #   nav: sidebar_nav
       sidebar:

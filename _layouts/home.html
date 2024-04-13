@@ -3,7 +3,7 @@ layout: archive
 ---
 
 {{ content }}
-
+<!-- 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% if paginator %}
@@ -20,3 +20,48 @@ layout: archive
 </div>
 
 {% include paginator.html %}
+ -->
+
+<h2>Articles</h2>
+
+<details>
+  <summary style="cursor: pointer;"><b> Physics - Variation</b></summary>
+  <div>
+
+
+{% assign sorted_posts = site.posts | where_exp: "post", "post.path contains 'physics/variation'" | sort: 'url' %}
+{% for post in sorted_posts %}
+  <article class="article-link">
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </article>
+{% endfor %}
+
+
+  </div>
+</details>
+
+<style>
+summary {
+  cursor: pointer;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details > div {
+  padding-left: 20px;
+}
+.article-link {
+  font-size: 14px; /* 调整字体大小 */
+  margin-bottom: 0; /* 移除 margin，如果需要可以稍后再调整 */
+}
+
+.article-link a {
+  display: block;
+  /* 不添加 padding 或 margin */
+}
+
+article {
+  margin-bottom: 8px; /* 调整文章之间的间距 */
+}
+</style>
+
