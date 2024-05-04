@@ -238,6 +238,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-toc
   # - jekyll-archives
 
 # mimic GitHub Pages with --safe
@@ -298,9 +299,10 @@ defaults:
       show_date: true
       comments: true
       related: true
-      # toc: true
-      # toc_label: "Contents"
+      toc: true
+      toc_label: "Contents"
       # toc_sticky: true
+      toc_icon: "bars"
       # sidebar:
       #   nav: sidebar_nav
       sidebar:
