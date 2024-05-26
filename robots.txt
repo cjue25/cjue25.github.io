@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: https://cjue25.github.io/sitemap.xml
