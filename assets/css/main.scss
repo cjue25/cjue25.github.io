@@ -26,3 +26,25 @@ search: false
 	color: black;
 	background-color: white;
 }
+
+.nav__category-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.2em;
+}
+
+.nav__category-item {
+  margin-bottom: 0.5em; 
+}
+
+.nav__tag-list {
+  margin: 0.2em 0 0.5em 1em;
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.1em;
+}
+
+.nav__tag-item {
+  margin-bottom: 0.2em;
+}
