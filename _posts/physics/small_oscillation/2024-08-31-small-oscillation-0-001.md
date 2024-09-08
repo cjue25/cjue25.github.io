@@ -303,3 +303,6 @@ $$
 - $\delta\vec{R}$則來自於(2)式的推導。
 
 
+最後上一張圖，總結一下這裡一直提的positive-definite代表什麼。
+
+{% include posts-fig.html path="/physics_small_oscillation/Fig1.png" %}
