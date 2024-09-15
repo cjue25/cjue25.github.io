@@ -379,11 +379,11 @@ $\omega$和$k$非線性關係，是dipersive wave！
 
 {% include posts-fig.html path="/physics_small_oscillation/Fig4.png" %}
 
-- 若$k$很小：可以視為線性沒有dipersive
+- 若$k$很小：可以視為線性沒有dipersive，討論的波長比$a$大很多
 
 $$
-\omega_k=\sqrt{\frac{C}{m}}2\frac{ka}{2}=\left(\sqrt{\frac{C}{m}}a\right)k\\
-\text{No diespersion wave speed: }\frac{\omega_l}{k}=\sqrt{\frac{C}{m}}a
+\omega_l=\sqrt{\frac{C}{m}}2\frac{ka}{2}=\left(\sqrt{\frac{C}{m}}a\right)k\\
+\text{No diespersion wave speed: }\frac{\omega_l}{k}=\sqrt{\frac{C}{m}}a\quad(\text{: constant})
 $$
 
 - $k$越大：dispersion就看得出來，$\omega$對應的點就不是等間隔了(有疏密的變化)！
