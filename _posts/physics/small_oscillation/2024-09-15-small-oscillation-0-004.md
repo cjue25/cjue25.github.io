@@ -1,5 +1,5 @@
 ---
-title:  "(3) Small Oscillation ─ Internal Structure Lattice"
+title:  "(4) Small Oscillation ─ Internal Structure Lattice & Linear Train"
 categories:
   - physics
 tags:
@@ -131,7 +131,7 @@ $$
 \omega_l^{2(-)} = \frac{4C\sin^2\frac{\pi l}{N}}{M+m}
 $$
 
-因沒有 K，可以把 M+m 視為一坨單位，很像[前一節](small-oscillation-0-002)例子中的單一particle，所以只剩下 C 連結在一起。
+因沒有 K，可以把 M+m 視為一坨單位，很像[前一節](small-oscillation-0-003)例子中的單一particle，所以只剩下 C 連結在一起。
 
 {% include posts-fig.html path="/physics_small_oscillation/Fig7.png" %}
 
@@ -145,7 +145,62 @@ $$
 \end{cases}
 $$
 
-現在整體變成是simpler linear chain with mass $(M+m)$，一樣是 non-dispersive wave，
+現在整體變成是simpler linear chain with mass $(M+m)$，如果一樣採用長波來解(k很小)，就會是 non-dispersive wave，
+
+
+## Normal Modes
+
+統整一下，現在會有兩個解，在$K\gg C$的情況下，取最低階的解答是
+
+- Optical：$\omega_l^{2(+)}  \approx K\frac{M+m}{Mm}$
+- Acoustic：$\omega_l^{2(-)} = \frac{4C\sin^2\frac{\pi l}{N}}{M+m}$
+
+畫個圖，可以再次看到 Optical 的頻率較高，Acoustic 的則是像前一節的 Linear Train Example。
+
+{% include posts-fig.html path="/physics_small_oscillation/Fig10.png" %}
+
+
+現在我們進一步看兩者的 Eigenvectors。
+
+
+回顧 EOM
+
+$$
+\begin{pmatrix}
+M\omega_l^2 - (C+K) & K + Ce^{-i\frac{2\pi}{N}l} \\
+K + Ce^{i\frac{2\pi}{N}l} & m\omega_l^2 - (C+K)
+\end{pmatrix} \begin{pmatrix}
+\xi_0 \\ \eta_0
+\end{pmatrix} = \begin{pmatrix}
+0 \\ 0
+\end{pmatrix}
+$$
+
+各自把$\omega^2$代進去解，一樣都只取最低階的accuracy，最後會得
+
+### Optical：
+
+$$
+M\xi_0 + m\eta_0 = 0
+$$
+
+{% include posts-fig.html path="/physics_small_oscillation/Fig8.png" %}
+
+
+代表分子內部的振動，兩個粒子方向相反，但因為跟其他的分子無關，所以反應出質心固定($M\xi_0 + m\eta_0=0$)。
+
+
+### Acoustic：
+
+$$
+\xi_0 = \eta_0
+$$
+
+{% include posts-fig.html path="/physics_small_oscillation/Fig9.png" %}
+
+
+代表單一分子視為一個單位，分子內兩個粒子一起動，整體就像是前一節在解的 Linear Train Example。
+
 
 ## 實際應用
 
