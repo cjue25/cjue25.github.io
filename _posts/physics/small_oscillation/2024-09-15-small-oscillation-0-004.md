@@ -1,5 +1,5 @@
 ---
-title:  "(4) Small Oscillation ─ Internal Structure Lattice & Linear Train"
+title:  "(4) Small Oscillation ─ Example: Internal Structure Lattice & Linear Train"
 categories:
   - physics
 tags:

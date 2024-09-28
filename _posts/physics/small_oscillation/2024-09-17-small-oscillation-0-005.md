@@ -1,5 +1,5 @@
 ---
-title:  "(5) Small Oscillation ─ Reflection Symmetry"
+title:  "(5) Small Oscillation ─ Example: Reflection Symmetry"
 categories:
   - physics
 tags:
@@ -91,7 +91,9 @@ $$
 m\frac{d^2 \delta R_2}{dt^2} = -C(\delta R_2 - \delta R_1)
 $$
 
-## $\psi_+$ Solution
+## Solution
+
+### $\psi_+$ 
 
 對於$\psi_+$來說，因為symmetry
 
@@ -156,7 +158,7 @@ $$
 
 可以看到 $\psi_{+}^{2}$的解，代表 particle 1 只有受到右邊的影響，左邊沒有(因為一起動)。
 
-## $\psi_-$ Solution
+### $\psi_-$
 
 對於$\psi_-$來說，因為symmetry
 
@@ -200,3 +202,48 @@ $$
 
 如果看 particle 1，可以看到會受到兩邊的力。(這裡就不繼續展開了)
 
+## 重新檢視 Operator
+
+我們前面定義的 reflection operator 是
+
+$$
+\hat{P}\begin{pmatrix}
+\delta R_{2}\\\delta R_{1}\\\delta R_{-1}\\\delta R_{-2}
+\end{pmatrix}\equiv
+\begin{pmatrix}
+\delta R_{-2}\\\delta R_{-1}\\\delta R_{1}\\\delta R_{2}
+\end{pmatrix}
+$$
+
+但其實更準確一點的表示應該是
+
+$$
+\hat{Q}\begin{pmatrix}
+\delta R_{2}\\\delta R_{1}\\\delta R_{-1}\\\delta R_{-2}
+\end{pmatrix}\equiv
+\begin{pmatrix}
+-\delta R_{-2}\\-\delta R_{-1}\\-\delta R_{1}\\-\delta R_{2}
+\end{pmatrix}
+$$
+
+$\hat{Q}$表示的比較直覺，因為我們對於 reflection 就是鏡像對應差個負號，跟$\hat{P}$的差別是
+
+$$
+\hat{P} = -\hat{Q}
+$$
+
+不過取平方之後都一樣，所以最後的答案不會變。
+
+
+<br>
+但是！！
+
+
+畢竟看起來是不同的數學表示，那我們做的$\hat{P}$到底是什麼呢？
+
+
+<br>
+我們做的$\hat{P}$其實並不是空間上displacement做反轉，而是在做**relabeling particle**！
+
+
+所以$\hat{P}$和$\hat{Q}$是在做一樣的事情，就是 relabel 之後，axis再轉一遍而已。

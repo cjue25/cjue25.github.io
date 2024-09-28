@@ -1,5 +1,5 @@
 ---
-title:  "(3) Small Oscillation ─ Linear Train Example"
+title:  "(3) Small Oscillation ─ Example: Linear Train"
 categories:
   - physics
 tags:

@@ -288,7 +288,7 @@ $$
 \Rightarrow\hat{M} -\omega_j^2 \delta \vec{R}=-\hat{c}(\delta\vec{R})
 $$
 
-解下去的$\omega_j$就是系統的normal modes，每一個$\delta\vec{R}$就是eigen vector，可以很好地把這個複雜的系統decompose to tiny problem。
+解下去的$\omega_j$就是系統normal modes的頻率，每一個eigen vector$\delta\vec{R}$就是normal modes，可以很好地把這個複雜的系統decompose to tiny problem。
 
 
 ### 所以勒？
@@ -306,3 +306,48 @@ $$
 最後上一張圖，總結一下這裡一直提的positive-definite代表什麼。
 
 {% include posts-fig.html path="/physics_small_oscillation/Fig1.png" %}
+
+## Normal Modes 的精神
+
+後續章節會舉更多的例子來求 normal modes，可是這邊要先提的一點是，當我們在說要解一個系統的 normal modes 時，並不是在說這個系統的運動都是**purely sinusoidal in time**，實際上的運動一定是相當複雜(例如串N顆粒子的彈簧運動)。
+
+
+進一步地是，sinusoidal motion是建立在**特定狀態**的起始位置，就是把每一顆粒子都先放在特定的位置(某個eigen vetor normal mode)，開始運動的時候才可以單純用某個sinusoidal $\omega$ 的頻率來運動。
+
+
+如果起始條件是亂放亂拉的，那麼放手後就會亂振，運動就很複雜了！
+
+  
+<br>
+既然如此，normal modes 需要綁定特定的狀態，為什麼物理學上還花這麼多的功夫在研究這件事情？那是因為，不論一般情況下運動多複雜，最 general 的運動永遠都可以**表示為這些 normal modes 的線性疊加**！
+
+> The most general motion of the system can always be expressed as certain linear combinations of the normal modes.
+
+
+(這裡可以順帶一提，線性代數本來就告訴我們解的eigen vetors form a complete bases)
+
+
+所以從數學上來看就是，若
+
+$$
+\delta \vec{R}^{(1)}, \delta \vec{R}^{(2)}, \cdots, \delta \vec{R}^{(N)}
+$$
+
+是 N 個 normal modes，
+
+(譬如說有2顆粒仔的彈簧$\delta \vec{R}^{(1)}$ 就是→←、$\delta \vec{R}^{(2)}$就是 →→)
+
+那麼某個時間點的運動可以表示成
+
+$$
+\delta \vec{R}(t=0)\equiv \sum^N_{j=1}C_j\delta\vec{R_0}^{j}\\
+(C_j: \text{determined by the initial condition})
+$$
+
+再加入時間頻率項，因為每個normal modes都是purely sinusoidal oscillation
+
+$$
+\delta\vec{R}(t)\equiv \sum^N_{j=1}C_j\delta\vec{R_0}^{j}e^{-i\omega_j t}
+$$
+
+就能很方便的表示出一般運動狀態了！
