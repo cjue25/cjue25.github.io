@@ -25,6 +25,22 @@ layout: archive
 <h2>Articles</h2>
 
 <details open>
+  <summary style="cursor: pointer;"><b> Physics - Thermal</b></summary>
+  <div>
+
+
+{% assign sorted_posts = site.posts | where_exp: "post", "post.path contains 'physics/thermal'" | sort: 'url' %}
+{% for post in sorted_posts %}
+  <article class="article-link">
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </article>
+{% endfor %}
+
+
+  </div>
+</details>
+
+<details open>
   <summary style="cursor: pointer;"><b> Physics - Relativity</b></summary>
   <div>
 
