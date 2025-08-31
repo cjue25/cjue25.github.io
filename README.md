@@ -1,2 +1,2 @@
-This is my web to write the learning notes:
+This is my website for learning notes:
 https://cjue25.github.io/
