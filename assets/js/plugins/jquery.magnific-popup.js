@@ -693,7 +693,7 @@
 
       options.el = $(e.mfpEl);
       if(options.delegate) {
-        options.items = el.find(options.delegate);
+        options.items = $($.find(options.delegate, el[0]));
       }
       mfp.open(options);
     },
