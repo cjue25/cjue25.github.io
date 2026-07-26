@@ -501,12 +501,42 @@
 
       if(!mfp.currTemplate[type]) {
         var markup = mfp.st[type] ? mfp.st[type].markup : false;
+        var _sanitizeMarkup = function(input) {
+          if(typeof input !== 'string') {
+            return input;
+          }
+
+          var doc = document.implementation.createHTMLDocument('');
+          var container = doc.createElement('div');
+          container.innerHTML = input;
+
+          var blockedTags = container.querySelectorAll('script, iframe, object, embed, link, meta');
+          for(var i = blockedTags.length - 1; i >= 0; i--) {
+            blockedTags[i].parentNode.removeChild(blockedTags[i]);
+          }
+
+          var all = container.getElementsByTagName('*');
+          for(var j = 0; j < all.length; j++) {
+            var attrs = all[j].attributes;
+            for(var k = attrs.length - 1; k >= 0; k--) {
+              var name = attrs[k].name;
+              var value = attrs[k].value;
+              if(/^on/i.test(name)) {
+                all[j].removeAttribute(name);
+              } else if(/^(href|src|xlink:href)$/i.test(name) && /^\s*javascript:/i.test(value)) {
+                all[j].removeAttribute(name);
+              }
+            }
+          }
+
+          return container.innerHTML;
+        };
 
         // allows to modify markup
         _mfpTrigger('FirstMarkupParse', markup);
 
         if(markup) {
-          mfp.currTemplate[type] = $(markup);
+          mfp.currTemplate[type] = $(_sanitizeMarkup(markup));
         } else {
           // if there is no markup found we just define that template is parsed
           mfp.currTemplate[type] = true;
