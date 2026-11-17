@@ -222,7 +222,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+# permalink: /:categories/:title/
 # permalink: /:year/:month/:day/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
@@ -289,6 +289,10 @@ compress_html:
 
 
 defaults:
+  - scope:
+      path: "googlec7610583306f9040.html"
+    values:
+      sitemap: false
   # _posts
   - scope:
       path: ""
